@@ -10,14 +10,6 @@ chave = input('Digite sua chave: ')
 # URL do canal
 base_url = f'https://api.thingspeak.com/update?api_key={chave}'
 
-# Exemplo funcional em Linux:
-# def temperatura_processador():
-#     # Obtêm informação da frequência do processador
-#     captura = "cat /sys/class/thermal/thermal_zone0/temp"
-#     temperatura = subprocess.check_output(captura, shell=True)
-#     return float(temperatura) / 1000
-#     # Exemplo: temperatura_processador = str(temperatura_processador())
-
 while True:
     # Obtem percentual de uso da CPU
     uso_cpu = psutil.cpu_percent()
